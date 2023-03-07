@@ -1,8 +1,21 @@
-console.log("yo");
 
-function getComputerChoice() {
-  const choices = ["rock", "paper", "scissors"];
+
+const choices = ["rock", "paper", "scissors"];
+
+function getUserChoice(){
+  buttons = document.querySelectorAll(".btn");
+  buttons.forEach(button => button.addEventlistener('click',));
+}
+
+
+function handleClick(){
+  
+
+handleClick();
+
+function getComputerChoice() { 
   const choice = choices[Math.floor(Math.random() * choices.length)];
+  return choice;
   console.log(choice);
 }
 
@@ -30,6 +43,6 @@ function playRound(userChoice, computerChoice) {
   } else return `You lost ${computerChoice} beats ${userChoice}`;
 }
 
-const userChoice = "rock";
+
 const computerChoice = getComputerChoice();
-console.log(playRound(userChoice, computerChoice));
+//console.log(playRound(userChoice, computerChoice));
